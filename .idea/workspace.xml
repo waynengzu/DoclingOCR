@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63632732-243d-45f1-adee-d4249584762d" name="Changes" comment="Added some code to the html file">
+    <list default="true" id="63632732-243d-45f1-adee-d4249584762d" name="Changes" comment="Changed the title">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/home.html" afterDir="false" />
     </list>
@@ -100,7 +100,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1737686114664</updated>
-      <workItem from="1737686115492" duration="15658000" />
+      <workItem from="1737686115492" duration="16290000" />
     </task>
     <task id="LOCAL-00001" summary="Initial committ">
       <option name="closed" value="true" />
@@ -150,7 +150,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737710507153</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Changed the title">
+      <option name="closed" value="true" />
+      <created>1737938764203</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1737938764203</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,7 +182,8 @@
     <MESSAGE value="Added an html file, added a new app 'store'" />
     <MESSAGE value="Made migrations" />
     <MESSAGE value="Added some code to the html file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added some code to the html file" />
+    <MESSAGE value="Changed the title" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed the title" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

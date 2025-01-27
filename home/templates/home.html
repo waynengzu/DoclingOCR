@@ -4,14 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OCR by Pilot Multimedia</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            height: 100vh;
+        }
+
+        .left, .right {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .left {
+            background-color: #f0f0f0;
+            border-right: 1px solid #ccc;
+        }
+
+        .right {
+            background-color: #ffffff;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        input[type="file"] {
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .right img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+    </style>
 </head>
 <body>
-    <h1>Upload Your File</h1>
-    <form action="/upload" method="POST" enctype="multipart/form-data">
-        <label for="fileInput">Choose a file:</label>
-        <input type="file" id="fileInput" name="uploadedFile" required>
-        <br><br>
-        <button type="submit">Upload</button>
-    </form>
+    <div class="left">
+        <input type="file" id="fileInput" accept=".pdf,.csv,.jpg,.jpeg,.png" />
+    </div>
+    <div class="right">
+        <iframe id="preview" style="display: none;"></iframe>
+        <img id="imagePreview" style="display: none;" />
+    </div>
+
+    <script>
+        const fileInput = document.getElementById('fileInput');
+        const preview = document.getElementById('preview');
+        const imagePreview = document.getElementById('imagePreview');
+
+        fileInput.addEventListener('change', (event) => {
+            const file = event.target.files[0];
+            if (file) {
+                const url = URL.createObjectURL(file);
+                if (file.type === 'application/pdf' || file.type === 'text/csv') {
+                    imagePreview.style.display = 'none';
+                    preview.style.display = 'block';
+                    preview.src = url;
+                } else if (file.type.startsWith('image/')) {
+                    preview.style.display = 'none';
+                    imagePreview.style.display = 'block';
+                    imagePreview.src = url;
+                } else {
+                    alert('Unsupported file type.');
+                }
+            }
+        });
+    </script>
 </body>
 </html>
