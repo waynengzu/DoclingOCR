@@ -3,12 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Split Screen File Upload and Display</title>
+    <title>OCR by Pilot Multimedia</title>
     <style>
         body {
             margin: 0;
             display: flex;
+            flex-direction: column;
             height: 100vh;
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
         }
 
         .left, .right {
@@ -39,18 +45,42 @@
             padding: 10px;
             font-size: 16px;
         }
+
+        .footer {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            background-color: #f8f8f8;
+            border-top: 1px solid #ccc;
+        }
+
+        .footer button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .footer button:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
-    <div class="left">
-        <h1>
-            OCR by Pilot Multimedia
-        </h1>
-        <input type="file" id="fileInput" accept=".pdf,.csv,.jpg,.jpeg,.png" />
+    <div class="content">
+        <div class="left">
+            <input type="file" id="fileInput" accept=".pdf,.csv,.jpg,.jpeg,.png" />
+        </div>
+        <div class="right">
+            <iframe id="preview" style="display: none;"></iframe>
+            <img id="imagePreview" style="display: none;" />
+        </div>
     </div>
-    <div class="right">
-        <iframe id="preview" style="display: none;"></iframe>
-        <img id="imagePreview" style="display: none;" />
+    <div class="footer">
+        <button onclick="goToNextPage()">OK</button>
     </div>
 
     <script>
@@ -75,6 +105,10 @@
                 }
             }
         });
+
+        function goToNextPage() {
+            window.location.href = 'processed/'; // Replace with the actual HTML file path
+        }
     </script>
 </body>
 </html>
