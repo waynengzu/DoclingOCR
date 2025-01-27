@@ -12,13 +12,19 @@ class Document(models.Model):
     DOCUMENT_TXT = 'TXT'
     DOCUMENT_HTML = 'HTML'
     DOCUMENT_PDF = 'PDF'
+    DOCUMENT_PNG = 'PNG'
+    DOCUMENT_JPEG = 'JPEG'
+    DOCUMENT_JPG = 'JPG'
 
     DOCUMENT_TYPES = [
         (DOCUMENT_JSON, 'JSON Document'),
         (DOCUMENT_CSV, 'CSV Document'),
         (DOCUMENT_TXT, 'TXT Document'),
         (DOCUMENT_HTML, 'HTML Document'),
-        (DOCUMENT_PDF, 'PDF Document')
+        (DOCUMENT_PDF, 'PDF Document'),
+        (DOCUMENT_PNG, 'PNG Document'),
+        (DOCUMENT_JPEG, 'JPEG Document'),
+        (DOCUMENT_JPG, 'JPG Document')
     ]
     name = models.CharField(max_length=255)
     original_type = models.CharField(max_length=255, choices=DOCUMENT_TYPES)
