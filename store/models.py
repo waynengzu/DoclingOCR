@@ -6,6 +6,12 @@ class User(models.Model):
     name = models.CharField(max_length=100)
     email = models.EmailField(unique=True)
 
+    def __str__(self) -> str:
+        return self.name
+
+    class Meta:
+        ordering = ['name']
+
 class Document(models.Model):
     DOCUMENT_JSON = 'JSON'
     DOCUMENT_CSV = 'CSV'
@@ -27,14 +33,26 @@ class Document(models.Model):
         (DOCUMENT_JPG, 'JPG Document')
     ]
     name = models.CharField(max_length=255)
-    original_type = models.CharField(max_length=255, choices=DOCUMENT_TYPES)
-    converted_type = models.CharField(max_length=255, choices=DOCUMENT_TYPES)
+    type = models.CharField(max_length=255, choices=DOCUMENT_TYPES)
+    path = models.CharField(max_length=255)
     user = models.ForeignKey(
         User, on_delete=models.CASCADE
     )
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        ordering = ['name']
 
 class Log(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     document = models.ForeignKey(
         Document, on_delete=models.CASCADE
     )
+
+    def __str__(self):
+        return self.document.name
+
+    class Meta:
+        ordering = ['created_at']

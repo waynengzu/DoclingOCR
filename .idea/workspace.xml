@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63632732-243d-45f1-adee-d4249584762d" name="Changes" comment="Created a css file and a js file and moved relevant code into these files">
-      <change afterPath="$PROJECT_DIR$/home/static/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/static/js/processed.js" afterDir="false" />
+    <list default="true" id="63632732-243d-45f1-adee-d4249584762d" name="Changes" comment="Added a second html file which will act as the processing page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/static/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/static/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/processed.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/processed.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PilotOCR/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/PilotOCR/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +57,7 @@
     "Django tests.Test: home.static.js.executor": "Run",
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "list.type.of.created.stylesheet": "CSS",
@@ -147,6 +146,7 @@
       <option name="presentableId" value="Default" />
       <updated>1737686114664</updated>
       <workItem from="1737686115492" duration="16290000" />
+      <workItem from="1738547379403" duration="12938000" />
     </task>
     <task id="LOCAL-00001" summary="Initial committ">
       <option name="closed" value="true" />
