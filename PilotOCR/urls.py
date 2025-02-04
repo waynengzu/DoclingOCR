@@ -23,4 +23,5 @@ admin.site.index_title = 'Pilot OCR Admin'
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/', include('home.urls')),
+    path('store/', include('store.urls'))
 ]

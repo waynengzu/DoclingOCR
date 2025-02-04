@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63632732-243d-45f1-adee-d4249584762d" name="Changes" comment="Connected to mysql server">
+    <list default="true" id="63632732-243d-45f1-adee-d4249584762d" name="Changes" comment="Downloaded django rest framework">
+      <change afterPath="$PROJECT_DIR$/store/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PilotOCR/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/PilotOCR/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PilotOCR/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/PilotOCR/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,10 +19,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -243,7 +244,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738638294194</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Downloaded django rest framework">
+      <option name="closed" value="true" />
+      <created>1738639685239</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1738639685239</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -288,7 +297,8 @@
     <MESSAGE value="Dealt with some database issues" />
     <MESSAGE value="Created a css file and a js file and moved relevant code into these files" />
     <MESSAGE value="Connected to mysql server" />
-    <option name="LAST_COMMIT_MESSAGE" value="Connected to mysql server" />
+    <MESSAGE value="Downloaded django rest framework" />
+    <option name="LAST_COMMIT_MESSAGE" value="Downloaded django rest framework" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
