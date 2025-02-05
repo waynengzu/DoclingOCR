@@ -36,13 +36,12 @@ class UserDetail(APIView):
         user.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
 
-@api_view(['GET', 'POST'])
-def document_list(request):
-    if request.method == 'GET':
+class DocumentList(APIView):
+    def get(self, request):
         queryset = Document.objects.all()
         serializer = DocumentSerializer(queryset, many=True)
-        return Response (serializer.data)
-    elif request.method == 'POST':
+        return Response(serializer.data)
+    def post(self, request):
         serializer = DocumentSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         serializer.save()
