@@ -20,7 +20,7 @@ def user_list(request):
         serializer.save()
         return Response('ok')
 
-@api_view(['GET', 'PUT'])
+@api_view(['GET', 'PUT', 'DELETE'])
 def user_detail(request, id):
     user = get_object_or_404(User, pk=id)
     if request.method == 'GET':
@@ -31,6 +31,9 @@ def user_detail(request, id):
         serializer.is_valid(raise_exception=True)
         serializer.save()
         return Response(serializer.data)
+    elif request.method == 'DELETE':
+        user.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
 
 @api_view(['GET', 'POST'])
 def document_list(request):
