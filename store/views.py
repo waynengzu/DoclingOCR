@@ -47,8 +47,14 @@ class DocumentList(APIView):
         serializer.save()
         return Response(serializer.data, status=status.HTTP_201_CREATED)
 
-@api_view()
-def log_list(request):
-    queryset = Log.objects.all()
-    serializer = LogSerializer(queryset, many=True)
-    return Response(serializer.data)
+class LogList(APIView):
+    def get(self, request):
+        queryset = Log.objects.all()
+        serializer = LogSerializer(queryset, many=True)
+        return Response(serializer.data)
+    def post(self, request):
+        serializer = LogSerializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+        return Response(serializer.data, status=status.HTTP_201_CREATED)
+
