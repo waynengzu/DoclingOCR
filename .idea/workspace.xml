@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63632732-243d-45f1-adee-d4249584762d" name="Changes" comment="Downloaded django rest framework">
+    <list default="true" id="63632732-243d-45f1-adee-d4249584762d" name="Changes" comment="Added model serializers for the log model ...">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -248,7 +249,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738639685239</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Added model serializers for the log model ...">
+      <option name="closed" value="true" />
+      <created>1738722665595</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1738722665595</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,7 +303,8 @@
     <MESSAGE value="Created a css file and a js file and moved relevant code into these files" />
     <MESSAGE value="Connected to mysql server" />
     <MESSAGE value="Downloaded django rest framework" />
-    <option name="LAST_COMMIT_MESSAGE" value="Downloaded django rest framework" />
+    <MESSAGE value="Added model serializers for the log model ..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added model serializers for the log model ..." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
