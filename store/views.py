@@ -3,8 +3,8 @@ from django.http import HttpResponse
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import status
-from .models import User, Document
-from .serializers import UserSerializer, DocumentSerializer
+from .models import User, Document, Log
+from .serializers import UserSerializer, DocumentSerializer, LogSerializer
 
 
 # Create your views here.
@@ -25,3 +25,9 @@ def document_list(request):
     queryset = Document.objects.all()
     serializer = DocumentSerializer(queryset, many=True)
     return Response (serializer.data)
+
+@api_view()
+def log_list(request):
+    queryset = Log.objects.all()
+    serializer = LogSerializer(queryset, many=True)
+    return Response(serializer.data)
