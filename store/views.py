@@ -2,36 +2,37 @@ from django.shortcuts import get_object_or_404
 from django.http import HttpResponse
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
+from rest_framework.views import APIView
 from rest_framework import status
 from .models import User, Document, Log
 from .serializers import UserSerializer, DocumentSerializer, LogSerializer
 
-
 # Create your views here.
-@api_view(['GET', 'POST'])
-def user_list(request):
-    if request.method == 'GET':
+
+class UserList(APIView):
+    def get(self, request):
         queryset = User.objects.all()
         serializer = UserSerializer(queryset, many=True)
         return Response(serializer.data)
-    elif request.method == 'POST':
+    def post(self, request):
         serializer = UserSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         serializer.save()
         return Response('ok')
 
-@api_view(['GET', 'PUT', 'DELETE'])
-def user_detail(request, id):
-    user = get_object_or_404(User, pk=id)
-    if request.method == 'GET':
+class UserDetail(APIView):
+    def get(self, request, id):
+        user = get_object_or_404(User, pk=id)
         serializer = UserSerializer(user)
         return Response(serializer.data)
-    elif request.method == 'PUT':
+    def put(self, request, id):
+        user = get_object_or_404(User, pk=id)
         serializer = UserSerializer(user, data=request.data)
         serializer.is_valid(raise_exception=True)
         serializer.save()
         return Response(serializer.data)
-    elif request.method == 'DELETE':
+    def delete(self, request, id):
+        user = get_object_or_404(User, pk=id)
         user.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
 
