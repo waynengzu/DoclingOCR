@@ -1,5 +1,6 @@
 from django.shortcuts import get_object_or_404
 from django.http import HttpResponse
+from rest_framework.generics import ListCreateAPIView, RetrieveUpdateDestroyAPIView
 from rest_framework.mixins import ListModelMixin, CreateModelMixin
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
@@ -10,52 +11,41 @@ from .serializers import UserSerializer, DocumentSerializer, LogSerializer
 
 # Create your views here.
 
-class UserList(APIView):
-    def get(self, request):
-        queryset = User.objects.all()
-        serializer = UserSerializer(queryset, many=True)
-        return Response(serializer.data)
-    def post(self, request):
-        serializer = UserSerializer(data=request.data)
-        serializer.is_valid(raise_exception=True)
-        serializer.save()
-        return Response('ok')
+class UserList(ListCreateAPIView):
+    queryset = User.objects.all()
+    serializer_class = UserSerializer
 
-class UserDetail(APIView):
-    def get(self, request, id):
-        user = get_object_or_404(User, pk=id)
-        serializer = UserSerializer(user)
-        return Response(serializer.data)
-    def put(self, request, id):
-        user = get_object_or_404(User, pk=id)
-        serializer = UserSerializer(user, data=request.data)
-        serializer.is_valid(raise_exception=True)
-        serializer.save()
-        return Response(serializer.data)
-    def delete(self, request, id):
-        user = get_object_or_404(User, pk=id)
+class UserDetail(RetrieveUpdateDestroyAPIView):
+    queryset = User.objects.all()
+    serializer_class = UserSerializer
+
+    def delete(self, request, pk):
+        user = get_object_or_404(User, pk=pk)
         user.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
 
-class DocumentList(APIView):
-    def get(self, request):
-        queryset = Document.objects.all()
-        serializer = DocumentSerializer(queryset, many=True)
-        return Response(serializer.data)
-    def post(self, request):
-        serializer = DocumentSerializer(data=request.data)
-        serializer.is_valid(raise_exception=True)
-        serializer.save()
-        return Response(serializer.data, status=status.HTTP_201_CREATED)
+class DocumentList(ListCreateAPIView):
+    queryset = Document.objects.all()
+    serializer_class = DocumentSerializer
 
-class LogList(APIView):
-    def get(self, request):
-        queryset = Log.objects.all()
-        serializer = LogSerializer(queryset, many=True)
-        return Response(serializer.data)
-    def post(self, request):
-        serializer = LogSerializer(data=request.data)
-        serializer.is_valid(raise_exception=True)
-        serializer.save()
-        return Response(serializer.data, status=status.HTTP_201_CREATED)
+class DocumentDetail(RetrieveUpdateDestroyAPIView):
+    queryset = Document.objects.all()
+    serializer_class = DocumentSerializer
 
+    def delete(self, request, pk):
+        document = get_object_or_404(Document, pk=pk)
+        document.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
+
+class LogList(ListCreateAPIView):
+    queryset = Log.objects.all()
+    serializer_class = LogSerializer
+
+class LogDetail(RetrieveUpdateDestroyAPIView):
+    queryset = Log.objects.all()
+    serializer_class = LogSerializer
+
+    def delete(self, request, pk):
+        log = get_object_or_404(Log, pk=pk)
+        log.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
