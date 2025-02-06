@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63632732-243d-45f1-adee-d4249584762d" name="Changes" comment="Applied the generic views, made everything neater ...">
+    <list default="true" id="63632732-243d-45f1-adee-d4249584762d" name="Changes" comment="Implemented the model view sets as well as the simple router">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/store/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/store/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/views.py" afterDir="false" />
@@ -304,7 +304,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738808494212</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Implemented the model view sets as well as the simple router">
+      <option name="closed" value="true" />
+      <created>1738809584384</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1738809584384</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -356,7 +364,8 @@
     <MESSAGE value="Converted some of the view functions in the store view file to view classes" />
     <MESSAGE value="Downloaded a couple of mixins" />
     <MESSAGE value="Applied the generic views, made everything neater ..." />
-    <option name="LAST_COMMIT_MESSAGE" value="Applied the generic views, made everything neater ..." />
+    <MESSAGE value="Implemented the model view sets as well as the simple router" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented the model view sets as well as the simple router" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

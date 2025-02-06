@@ -1,8 +1,8 @@
 from django.urls import path
-from rest_framework.routers import SimpleRouter
+from rest_framework.routers import DefaultRouter
 from . import views
 
-router = SimpleRouter()
+router = DefaultRouter()
 router.register('users', views.UserViewSet)
 router.register('documents', views.DocumentViewSet)
 router.register('logs', views.LogViewSet)
