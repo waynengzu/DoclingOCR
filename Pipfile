@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 mysqlclient = "*"
 djangorestframework = "*"
+drf-nested-routers = "*"
 
 [dev-packages]
 

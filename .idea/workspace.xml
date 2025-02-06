@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63632732-243d-45f1-adee-d4249584762d" name="Changes" comment="Implemented the model view sets as well as the simple router">
+    <list default="true" id="63632732-243d-45f1-adee-d4249584762d" name="Changes" comment="Turned the simple router into a default router as well as other changes ...">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -312,7 +310,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738809584384</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Turned the simple router into a default router as well as other changes ...">
+      <option name="closed" value="true" />
+      <created>1738814428901</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1738814428901</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -365,7 +371,8 @@
     <MESSAGE value="Downloaded a couple of mixins" />
     <MESSAGE value="Applied the generic views, made everything neater ..." />
     <MESSAGE value="Implemented the model view sets as well as the simple router" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented the model view sets as well as the simple router" />
+    <MESSAGE value="Turned the simple router into a default router as well as other changes ..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Turned the simple router into a default router as well as other changes ..." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
