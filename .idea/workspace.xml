@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63632732-243d-45f1-adee-d4249584762d" name="Changes" comment="Turned the simple router into a default router as well as other changes ...">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="63632732-243d-45f1-adee-d4249584762d" name="Changes" comment="downloaded nested routers but have not implemented it yet ..." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -318,7 +316,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738814428901</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="downloaded nested routers but have not implemented it yet ...">
+      <option name="closed" value="true" />
+      <created>1738835234357</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1738835234358</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -372,7 +378,8 @@
     <MESSAGE value="Applied the generic views, made everything neater ..." />
     <MESSAGE value="Implemented the model view sets as well as the simple router" />
     <MESSAGE value="Turned the simple router into a default router as well as other changes ..." />
-    <option name="LAST_COMMIT_MESSAGE" value="Turned the simple router into a default router as well as other changes ..." />
+    <MESSAGE value="downloaded nested routers but have not implemented it yet ..." />
+    <option name="LAST_COMMIT_MESSAGE" value="downloaded nested routers but have not implemented it yet ..." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
