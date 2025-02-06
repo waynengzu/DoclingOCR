@@ -1,11 +1,10 @@
 from django.urls import path
+from rest_framework.routers import SimpleRouter
 from . import views
 
-urlpatterns = [
-    path('users/', views.UserList.as_view()),
-    path('users/<pk>/', views.UserDetail.as_view()),
-    path('documents/', views.DocumentList.as_view()),
-    path('documents/<pk>/', views.DocumentDetail.as_view()),
-    path('logs/', views.LogList.as_view()),
-    path('logs/<pk>/', views.LogDetail.as_view())
-]
+router = SimpleRouter()
+router.register('users', views.UserViewSet)
+router.register('documents', views.DocumentViewSet)
+router.register('logs', views.LogViewSet)
+
+urlpatterns = router.urls

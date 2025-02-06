@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63632732-243d-45f1-adee-d4249584762d" name="Changes" comment="Downloaded a couple of mixins">
+    <list default="true" id="63632732-243d-45f1-adee-d4249584762d" name="Changes" comment="Applied the generic views, made everything neater ...">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/store/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/store/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/views.py" afterDir="false" />
@@ -296,7 +296,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738805111866</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Applied the generic views, made everything neater ...">
+      <option name="closed" value="true" />
+      <created>1738808494212</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1738808494212</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -347,7 +355,8 @@
     <MESSAGE value="Added delete requests for the user model ..." />
     <MESSAGE value="Converted some of the view functions in the store view file to view classes" />
     <MESSAGE value="Downloaded a couple of mixins" />
-    <option name="LAST_COMMIT_MESSAGE" value="Downloaded a couple of mixins" />
+    <MESSAGE value="Applied the generic views, made everything neater ..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Applied the generic views, made everything neater ..." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

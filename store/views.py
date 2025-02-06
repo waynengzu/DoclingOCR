@@ -5,17 +5,14 @@ from rest_framework.mixins import ListModelMixin, CreateModelMixin
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework.views import APIView
-from rest_framework import status
+from rest_framework.viewsets import ModelViewSet
+from rest_framework import status, viewsets
 from .models import User, Document, Log
 from .serializers import UserSerializer, DocumentSerializer, LogSerializer
 
 # Create your views here.
 
-class UserList(ListCreateAPIView):
-    queryset = User.objects.all()
-    serializer_class = UserSerializer
-
-class UserDetail(RetrieveUpdateDestroyAPIView):
+class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()
     serializer_class = UserSerializer
 
@@ -24,11 +21,7 @@ class UserDetail(RetrieveUpdateDestroyAPIView):
         user.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
 
-class DocumentList(ListCreateAPIView):
-    queryset = Document.objects.all()
-    serializer_class = DocumentSerializer
-
-class DocumentDetail(RetrieveUpdateDestroyAPIView):
+class DocumentViewSet(ModelViewSet):
     queryset = Document.objects.all()
     serializer_class = DocumentSerializer
 
@@ -37,11 +30,7 @@ class DocumentDetail(RetrieveUpdateDestroyAPIView):
         document.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
 
-class LogList(ListCreateAPIView):
-    queryset = Log.objects.all()
-    serializer_class = LogSerializer
-
-class LogDetail(RetrieveUpdateDestroyAPIView):
+class LogViewSet(ModelViewSet):
     queryset = Log.objects.all()
     serializer_class = LogSerializer
 
