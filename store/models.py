@@ -34,7 +34,7 @@ class Document(models.Model):
     ]
     name = models.CharField(max_length=255)
     type = models.CharField(max_length=255, choices=DOCUMENT_TYPES)
-    path = models.CharField(max_length=255)
+    path = models.FileField(upload_to='store/documents')
     user = models.ForeignKey(
         User, on_delete=models.CASCADE
     )
