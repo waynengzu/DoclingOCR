@@ -7,10 +7,17 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework.viewsets import ModelViewSet
 from rest_framework import status, viewsets
-from .models import User, Document, Log
-from .serializers import UserSerializer, DocumentSerializer, LogSerializer
+from .models import User, Document, Log, Upload
+from .serializers import UserSerializer, DocumentSerializer, LogSerializer, UploadSerializer
 
 # Create your views here.
+
+class UploadViewSet(viewsets.ModelViewSet):
+    queryset = Upload.objects.all()
+    serializer_class = UploadSerializer
+
+    def destroy(self, request, *args, **kwargs):
+        return super().destroy(request, *args, **kwargs)
 
 class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()

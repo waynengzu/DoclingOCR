@@ -7,5 +7,6 @@ router = routers.DefaultRouter()
 router.register('users', views.UserViewSet)
 router.register('documents', views.DocumentViewSet)
 router.register('logs', views.LogViewSet)
+router.register('uploads', views.UploadViewSet)
 
 urlpatterns = router.urls

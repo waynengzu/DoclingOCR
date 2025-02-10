@@ -2,6 +2,10 @@ from django.db import models
 
 # Create your models here.
 
+class Upload(models.Model):
+    upload = models.FileField(upload_to='store/documents')
+    created_at = models.DateTimeField(auto_now_add=True)
+
 class User(models.Model):
     name = models.CharField(max_length=100)
     email = models.EmailField(unique=True)

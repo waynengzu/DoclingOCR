@@ -1,6 +1,11 @@
 from rest_framework import serializers
-from store.models import User, Document, Log
+from store.models import User, Document, Log, Upload
 
+
+class UploadSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Upload
+        fields = ('id', 'upload', 'created_at')
 
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
