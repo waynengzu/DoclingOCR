@@ -4,17 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63632732-243d-45f1-adee-d4249584762d" name="Changes" comment="Created a completely new model called Upload that only takes in an uploaded file or image as its only field as I believe this is better for what I really want to do ...">
+    <list default="true" id="63632732-243d-45f1-adee-d4249584762d" name="Changes" comment="Edited the html code to suit the Upload model">
+      <change afterPath="$PROJECT_DIR$/home/static/js/home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/store/documents/21008537-481BSE-202208_1.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/store/documents/ImageCIMB.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/store/documents/Maybank_AR_2013_Financial_Statements-27.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/store/documents/No2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/store/documents/No2_sJpCEOX.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/store/documents/Paris.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/store/documents/Paris_9heCW4m.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/store/documents/Screenshot_2025-02-07_102723.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,9 +18,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="Python Script" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -380,7 +373,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739159215410</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Edited the html code to suit the Upload model">
+      <option name="closed" value="true" />
+      <created>1739166465104</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1739166465104</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -413,7 +414,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added an app 'home'" />
     <MESSAGE value="Added an html file, added a new app 'store'" />
     <MESSAGE value="Made migrations" />
     <MESSAGE value="Added some code to the html file" />
@@ -438,7 +438,8 @@
     <MESSAGE value="Implemented some stuff for CORS ... not entirely sure about this one though ..." />
     <MESSAGE value="Deleted an image ..." />
     <MESSAGE value="Created a completely new model called Upload that only takes in an uploaded file or image as its only field as I believe this is better for what I really want to do ..." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created a completely new model called Upload that only takes in an uploaded file or image as its only field as I believe this is better for what I really want to do ..." />
+    <MESSAGE value="Edited the html code to suit the Upload model" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edited the html code to suit the Upload model" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
