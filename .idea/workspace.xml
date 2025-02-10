@@ -4,10 +4,70 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63632732-243d-45f1-adee-d4249584762d" name="Changes" comment="Edited the html code to suit the Upload model">
+    <list default="true" id="63632732-243d-45f1-adee-d4249584762d" name="Changes" comment="Split the screen but cannot figure out why pdfs don't get displayed ...">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/static/js/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/js/home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/21008537-481BSE-202208.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/21008537-481BSE-202208_1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/21008537-481BSE-202208_1_JEUnXph.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/21008537-481BSE-202208_1_OUMtYxN.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/21008537-481BSE-202208_1_cqez2uY.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/21008537-481BSE-202208_1_mnqXvcJ.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/21008537-481BSE-202208_1_u8dxEBX.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/21008537-481BSE-202208_1_vRxJffW.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/21008537-481BSE-202208_1_wsw62tU.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/21008537-481BSE-202208_1_y6UW9le.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/21008537-481BSE-202208_1_yquDkrq.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/21008537-481BSE-202208_BR5kIvN.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/21008537-481BSE-202208_fNNzzHX.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/21008537-481BSE-202208_iPuox1X.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/2408.09869v5.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/Copy_of_TEDS_Table_Accuracy.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/Ground_Truth.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/ImageCIMB.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/ImageCIMB_1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/ImageCIMB_1_0aYKyEs.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/ImageCIMB_1_3e9WAFk.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/ImageCIMB_1_6wPaGOj.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/ImageCIMB_1_BQyyjZe.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/ImageCIMB_1_bhgKEOK.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/ImageCIMB_1_iGRoKh9.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/ImageCIMB_5UFa4st.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/ImageCIMB_7dbqM0g.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/ImageCIMB_9BiWClV.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/ImageCIMB_H5BQFtw.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/ImageCIMB_ND0jpfP.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/ImageCIMB_X1lvUOD.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/ImageCIMB_YQXmsmz.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/ImageCIMB_gwzXgSr.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/ImageCIMB_lHvbwhj.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/ImageCIMB_page_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/Maybank_AR_2013_Financial_Statements-27.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/Maybank_AR_2023_Financial_Statements-31_1_1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/No2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/No2_YKVWAdl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/No2_lc50NZa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/No2_scYTPFS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/Paris.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/Paris_1irwcs4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/Paris_CI2pbjK.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/Paris_MUT2noD.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/Paris_SS0sBIx.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/Paris_W0GLgCq.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/Paris_WczqeEW.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/Paris_bOZK9Us.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/Paris_d3GFLAW.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/Paris_qTBeNIN.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/Paris_r855htK.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/Paris_ybx7MO9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/Plagiarism_Report_21008537.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/Plagiarism_Report_21008537_VqLyxWq.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/Plagiarism_Report_21008537_h5gwXjQ.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/Screenshot_2025-02-07_102723.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/Screenshot_2025-02-07_102723_yXIfmdd.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/_Maybank_AR_2016_Financial_Statements-35-0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/financial_statement_2022_hgm_Redacted_SME-13_page_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/financial_statement_2022_hgm_Redacted_SME-13_page_1_pmg4j6P.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/preprocessed_image.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -381,7 +441,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739166465104</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Split the screen but cannot figure out why pdfs don't get displayed ...">
+      <option name="closed" value="true" />
+      <created>1739172855340</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1739172855340</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -414,7 +482,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added an html file, added a new app 'store'" />
     <MESSAGE value="Made migrations" />
     <MESSAGE value="Added some code to the html file" />
     <MESSAGE value="Changed the title" />
@@ -439,7 +506,8 @@
     <MESSAGE value="Deleted an image ..." />
     <MESSAGE value="Created a completely new model called Upload that only takes in an uploaded file or image as its only field as I believe this is better for what I really want to do ..." />
     <MESSAGE value="Edited the html code to suit the Upload model" />
-    <option name="LAST_COMMIT_MESSAGE" value="Edited the html code to suit the Upload model" />
+    <MESSAGE value="Split the screen but cannot figure out why pdfs don't get displayed ..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Split the screen but cannot figure out why pdfs don't get displayed ..." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
