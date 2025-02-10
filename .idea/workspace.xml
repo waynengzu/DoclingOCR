@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63632732-243d-45f1-adee-d4249584762d" name="Changes" comment="Implemented some stuff for CORS ... not entirely sure about this one though ...">
+    <list default="true" id="63632732-243d-45f1-adee-d4249584762d" name="Changes" comment="Deleted an image ...">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/_Maybank AR 2023_Financial Statements-31-0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PilotOCR/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/PilotOCR/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/js/processed.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/processed.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -356,7 +363,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738915365166</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Deleted an image ...">
+      <option name="closed" value="true" />
+      <created>1738919069680</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1738919069680</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -389,7 +404,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Initial committ" />
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Added an app 'home'" />
     <MESSAGE value="Added an html file, added a new app 'store'" />
@@ -414,7 +428,8 @@
     <MESSAGE value="Deleted media for clarity for now ..." />
     <MESSAGE value="Changed the path field in document to a file field and it seems to work, but the change has not been reflected in the database yet ..." />
     <MESSAGE value="Implemented some stuff for CORS ... not entirely sure about this one though ..." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented some stuff for CORS ... not entirely sure about this one though ..." />
+    <MESSAGE value="Deleted an image ..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Deleted an image ..." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

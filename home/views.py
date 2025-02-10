@@ -6,5 +6,4 @@ from django.http import HttpResponse
 def display_home(request):
     return render(request, 'home.html')
 
-def display_processed(request):
-    return render(request, 'processed.html')
+
