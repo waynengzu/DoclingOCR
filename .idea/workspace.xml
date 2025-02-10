@@ -4,12 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63632732-243d-45f1-adee-d4249584762d" name="Changes" comment="Deleted an image ...">
+    <list default="true" id="63632732-243d-45f1-adee-d4249584762d" name="Changes" comment="Created a completely new model called Upload that only takes in an uploaded file or image as its only field as I believe this is better for what I really want to do ...">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/21008537-481BSE-202208_1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/ImageCIMB.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/Maybank_AR_2013_Financial_Statements-27.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/No2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/No2_sJpCEOX.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/Paris.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/Paris_9heCW4m.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/documents/Screenshot_2025-02-07_102723.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -367,7 +372,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738919069680</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Created a completely new model called Upload that only takes in an uploaded file or image as its only field as I believe this is better for what I really want to do ...">
+      <option name="closed" value="true" />
+      <created>1739159215410</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1739159215410</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -400,7 +413,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Initial commit" />
     <MESSAGE value="Added an app 'home'" />
     <MESSAGE value="Added an html file, added a new app 'store'" />
     <MESSAGE value="Made migrations" />
@@ -425,7 +437,8 @@
     <MESSAGE value="Changed the path field in document to a file field and it seems to work, but the change has not been reflected in the database yet ..." />
     <MESSAGE value="Implemented some stuff for CORS ... not entirely sure about this one though ..." />
     <MESSAGE value="Deleted an image ..." />
-    <option name="LAST_COMMIT_MESSAGE" value="Deleted an image ..." />
+    <MESSAGE value="Created a completely new model called Upload that only takes in an uploaded file or image as its only field as I believe this is better for what I really want to do ..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created a completely new model called Upload that only takes in an uploaded file or image as its only field as I believe this is better for what I really want to do ..." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
