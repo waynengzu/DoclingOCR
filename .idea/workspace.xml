@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63632732-243d-45f1-adee-d4249584762d" name="Changes" comment="Edited the html code to suit the Upload model">
-      <change afterPath="$PROJECT_DIR$/home/static/js/home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/js/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/js/home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

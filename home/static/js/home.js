@@ -21,14 +21,15 @@ function uploadFile() {
         method: 'POST',
         body: formData,
         headers: {
-            'X-CSRFToken': getCSRFToken() // Send CSRF token
+            'X-CSRFToken': getCSRFToken()
         },
-        credentials: 'include' // Ensure cookies are sent
+        credentials: 'include'
     })
     .then(response => response.json())
     .then(data => {
-        if (data.id) {
+        if (data.id && data.upload) {
             status.innerText = "File uploaded successfully!";
+            displayFile(data.upload);
         } else {
             status.innerText = "Upload failed.";
         }
@@ -37,4 +38,26 @@ function uploadFile() {
         console.error("Error:", error);
         status.innerText = "Error uploading file.";
     });
+}
+
+function displayFile(fileUrl) {
+    const previewText = document.getElementById('preview-text');
+    const previewImage = document.getElementById('preview');
+    const pdfPreview = document.getElementById('pdf-preview');
+
+    // Hide text placeholder
+    previewText.style.display = "none";
+    previewImage.style.display = "none";
+    pdfPreview.style.display = "none";
+
+    // Determine file type
+    if (fileUrl.toLowerCase().endsWith('.pdf')) {
+        // PDFs should be displayed in an iframe
+        pdfPreview.src = fileUrl;
+        pdfPreview.style.display = "block";
+    } else {
+        // Images should be displayed in an img tag
+        previewImage.src = fileUrl;
+        previewImage.style.display = "block";
+    }
 }
