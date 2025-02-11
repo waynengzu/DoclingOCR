@@ -8,6 +8,8 @@ class DocumentAdmin(admin.ModelAdmin):
 # Register your models here.
 admin.site.register(models.Upload)
 
+admin.site.register(models.OCR)
+
 admin.site.register(models.Document, DocumentAdmin)
 
 admin.site.register(models.Log)

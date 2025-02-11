@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63632732-243d-45f1-adee-d4249584762d" name="Changes" comment="Split the screen but cannot figure out why pdfs don't get displayed ..." />
+    <list default="true" id="63632732-243d-45f1-adee-d4249584762d" name="Changes" comment="Deleted the ocr app for now because it does not seem to work ...">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -385,7 +391,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739172855340</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Deleted the ocr app for now because it does not seem to work ...">
+      <option name="closed" value="true" />
+      <created>1739257754434</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1739257754434</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -418,7 +432,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Made migrations" />
     <MESSAGE value="Added some code to the html file" />
     <MESSAGE value="Changed the title" />
     <MESSAGE value="Basic edits" />
@@ -443,7 +456,8 @@
     <MESSAGE value="Created a completely new model called Upload that only takes in an uploaded file or image as its only field as I believe this is better for what I really want to do ..." />
     <MESSAGE value="Edited the html code to suit the Upload model" />
     <MESSAGE value="Split the screen but cannot figure out why pdfs don't get displayed ..." />
-    <option name="LAST_COMMIT_MESSAGE" value="Split the screen but cannot figure out why pdfs don't get displayed ..." />
+    <MESSAGE value="Deleted the ocr app for now because it does not seem to work ..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Deleted the ocr app for now because it does not seem to work ..." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

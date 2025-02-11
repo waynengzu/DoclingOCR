@@ -1,6 +1,10 @@
 from rest_framework import serializers
-from store.models import User, Document, Log, Upload
+from store.models import User, Document, Log, Upload, OCR
 
+class OCRSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = OCR
+        fields = ('id', 'html', 'created_at')
 
 class UploadSerializer(serializers.ModelSerializer):
     class Meta:

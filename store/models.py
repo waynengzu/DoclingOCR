@@ -2,6 +2,10 @@ from django.db import models
 
 # Create your models here.
 
+class OCR(models.Model):
+    html = models.FileField(upload_to='store/uploads')
+    created_at = models.DateTimeField(auto_now_add=True)
+
 class Upload(models.Model):
     upload = models.FileField(upload_to='store/documents')
     created_at = models.DateTimeField(auto_now_add=True)
