@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63632732-243d-45f1-adee-d4249584762d" name="Changes" comment="Changed a bunch of things ... implemented the second html page ... uploaded file gets sent successfully to the second page ... process.js needs improvement ...">
+    <list default="true" id="63632732-243d-45f1-adee-d4249584762d" name="Changes" comment="Edited some css for the second html page ...">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/static/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/css/home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/process.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/process.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -437,7 +438,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739349507066</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Edited some css for the second html page ...">
+      <option name="closed" value="true" />
+      <created>1739350453186</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1739350453186</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -470,7 +479,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Basic edits" />
     <MESSAGE value="Added another html file" />
     <MESSAGE value="Dealt with some database issues" />
     <MESSAGE value="Created a css file and a js file and moved relevant code into these files" />
@@ -495,7 +503,8 @@
     <MESSAGE value="Deleted the ocr app for now because it does not seem to work ..." />
     <MESSAGE value="Added the x frame configuration two lines in the main settings file to enable pdfs to be displayed ...&#10;&#10;PS changed the media file uploads name in the media folder" />
     <MESSAGE value="Changed a bunch of things ... implemented the second html page ... uploaded file gets sent successfully to the second page ... process.js needs improvement ..." />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed a bunch of things ... implemented the second html page ... uploaded file gets sent successfully to the second page ... process.js needs improvement ..." />
+    <MESSAGE value="Edited some css for the second html page ..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Edited some css for the second html page ..." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
