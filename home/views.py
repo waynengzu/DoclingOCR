@@ -3,7 +3,8 @@ from django.http import HttpResponse
 
 # Create your views here.
 
-def display_home(request):
-    return render(request, 'home.html')
+def display_index(request):
+    return render(request, 'index.html')
 
-
+def display_process(request):
+    return render(request, 'process.html')

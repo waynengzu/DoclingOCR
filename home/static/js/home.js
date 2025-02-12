@@ -4,9 +4,12 @@ function getCSRFToken() {
         ?.split('=')[1];
 }
 
+let uploadedFileUrl = '';
+
 function uploadFile() {
     const fileInput = document.getElementById('fileInput');
     const status = document.getElementById('status');
+    const processButton = document.getElementById('processButton');
 
     if (fileInput.files.length === 0) {
         status.innerText = "Please select a file.";
@@ -29,7 +32,9 @@ function uploadFile() {
     .then(data => {
         if (data.id && data.upload) {
             status.innerText = "File uploaded successfully!";
+            uploadedFileUrl = data.upload;
             displayFile(data.upload);
+            processButton.disabled = false;
         } else {
             status.innerText = "Upload failed.";
         }
@@ -59,5 +64,11 @@ function displayFile(fileUrl) {
         // Images should be displayed in an img tag
         previewImage.src = fileUrl;
         previewImage.style.display = "block";
+    }
+}
+
+function processFile() {
+    if (uploadedFileUrl) {
+        window.location.href = `/home/processed?file=${encodeURIComponent(uploadedFileUrl)}`;
     }
 }

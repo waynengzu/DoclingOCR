@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63632732-243d-45f1-adee-d4249584762d" name="Changes" comment="Deleted the ocr app for now because it does not seem to work ...">
+    <list default="true" id="63632732-243d-45f1-adee-d4249584762d" name="Changes" comment="Added the x frame configuration two lines in the main settings file to enable pdfs to be displayed ...&#10;&#10;PS changed the media file uploads name in the media folder">
+      <change afterPath="$PROJECT_DIR$/home/static/js/process.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/templates/process.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/js/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/js/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,27 +55,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Django Server.PilotOCR.executor&quot;: &quot;Run&quot;,
-    &quot;Django tests.Test: home.static.js.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.node.html.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/wayne/PycharmProjects/PilotOCR/media&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Django Server.PilotOCR.executor": "Run",
+    "Django tests.Test: home.static.js.executor": "Run",
+    "JavaScript Debug.node.html.executor": "Run",
+    "Python.engine.executor": "Run",
+    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/wayne/PycharmProjects/PilotOCR/media",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\wayne\PycharmProjects\PilotOCR\media" />
@@ -105,6 +112,29 @@
     <configuration name="node.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/PilotOCR/home/templates/node.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
+    <configuration name="engine" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PilotOCR" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/store" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/store/engine.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="PilotOCR" type="Python.DjangoServer" factoryName="Django server">
       <module name="PilotOCR" />
       <option name="ENV_FILES" value="" />
@@ -132,6 +162,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.engine" />
         <item itemvalue="JavaScript Debug.node.html" />
         <item itemvalue="Django tests.Test: home.static.js" />
       </list>
@@ -396,7 +427,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739257754434</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Added the x frame configuration two lines in the main settings file to enable pdfs to be displayed ...&#10;&#10;PS changed the media file uploads name in the media folder">
+      <option name="closed" value="true" />
+      <created>1739327810461</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1739327810461</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -429,7 +468,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added some code to the html file" />
     <MESSAGE value="Changed the title" />
     <MESSAGE value="Basic edits" />
     <MESSAGE value="Added another html file" />
@@ -454,7 +492,8 @@
     <MESSAGE value="Edited the html code to suit the Upload model" />
     <MESSAGE value="Split the screen but cannot figure out why pdfs don't get displayed ..." />
     <MESSAGE value="Deleted the ocr app for now because it does not seem to work ..." />
-    <option name="LAST_COMMIT_MESSAGE" value="Deleted the ocr app for now because it does not seem to work ..." />
+    <MESSAGE value="Added the x frame configuration two lines in the main settings file to enable pdfs to be displayed ...&#10;&#10;PS changed the media file uploads name in the media folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the x frame configuration two lines in the main settings file to enable pdfs to be displayed ...&#10;&#10;PS changed the media file uploads name in the media folder" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -470,6 +509,6 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PilotOCR$views.coverage" NAME="views Coverage Results" MODIFIED="1738746060074" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/store" />
     <SUITE FILE_PATH="coverage/PilotOCR$Test__home_static_js.coverage" NAME="Test: home.static.js Coverage Results" MODIFIED="1737946611527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/PilotOCR$engine.coverage" NAME="engine Coverage Results" MODIFIED="1739262735788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/home" />
+    <SUITE FILE_PATH="coverage/PilotOCR$engine.coverage" NAME="engine Coverage Results" MODIFIED="1739329699052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/store" />
   </component>
 </project>
