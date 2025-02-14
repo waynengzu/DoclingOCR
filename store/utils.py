@@ -31,7 +31,7 @@ def process_file_with_ocr(upload_instance):
     pipeline_options.do_table_structure = True
     pipeline_options.table_structure_options.do_cell_matching = True
     pipeline_options.generate_page_images = True
-    pipeline_options.ocr_options = EasyOcrOptions(lang=['en'], recog_network='fine_tuned_model')
+    pipeline_options.ocr_options = EasyOcrOptions(lang=['en'])
 
     doc_converter = DocumentConverter(
         format_options={InputFormat.PDF: PdfFormatOption(pipeline_options=pipeline_options)}
