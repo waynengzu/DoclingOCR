@@ -35,3 +35,23 @@ iframe {
     border: none;
     display: none;
 }
+#progress-container {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 10px;
+    height: 20px;
+}
+
+#progress-bar {
+    width: 0%;
+    height: 100%;
+    background-color: #4CAF50;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    transition: width 0.5s linear;
+}

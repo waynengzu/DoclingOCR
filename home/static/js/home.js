@@ -10,6 +10,8 @@ function uploadFile() {
     const fileInput = document.getElementById('fileInput');
     const status = document.getElementById('status');
     const processButton = document.getElementById('processButton');
+    const progressContainer = document.getElementById("progress-container");
+    const progressBar = document.getElementById("progress-bar");
 
     if (fileInput.files.length === 0) {
         status.innerText = "Please select a file.";
@@ -19,6 +21,23 @@ function uploadFile() {
     const file = fileInput.files[0];
     const formData = new FormData();
     formData.append('upload', file);
+
+    // Show and reset progress bar
+    progressContainer.style.display = "block";
+    progressBar.style.width = "0%";
+
+    let progress = 0;
+    const duration = 120000; // 120 seconds (2 minutes) in milliseconds
+    const intervalTime = duration / 100; // 100 steps (1200ms per step)
+
+    const interval = setInterval(() => {
+        progress += 1; // Increase by 1% per step
+        progressBar.style.width = progress + "%";
+
+        if (progress >= 100) {
+            clearInterval(interval);
+        }
+    }, intervalTime);
 
     fetch('http://127.0.0.1:8000/store/uploads/', {
         method: 'POST',
@@ -30,18 +49,24 @@ function uploadFile() {
     })
     .then(response => response.json())
     .then(data => {
+        clearInterval(interval); // Ensure progress stops
+
         if (data.id && data.upload) {
+            progressBar.style.width = "100%";
             status.innerText = "File processed successfully!";
             uploadedFileUrl = data.upload;
             displayFile(data.upload);
             processButton.disabled = false;
         } else {
             status.innerText = "Process failed.";
+            progressContainer.style.display = "none"; // Hide progress bar on failure
         }
     })
     .catch(error => {
+        clearInterval(interval);
         console.error("Error:", error);
         status.innerText = "Error processing file.";
+        progressContainer.style.display = "none"; // Hide progress bar on error
     });
 }
 

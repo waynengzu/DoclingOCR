@@ -15,6 +15,11 @@
         <input type="file" id="fileInput" accept="image/*,application/pdf">
         <button onclick="uploadFile()">Process</button>
         <button onclick="processFile()" id="processButton" disabled>Analyze</button>
+
+        <div id="progress-container" style="display: none;">
+            <div id="progress-bar"></div>
+        </div>
+
         <p id="status"></p>
     </div>
 
