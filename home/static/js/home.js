@@ -31,17 +31,17 @@ function uploadFile() {
     .then(response => response.json())
     .then(data => {
         if (data.id && data.upload) {
-            status.innerText = "File uploaded successfully!";
+            status.innerText = "File processed successfully!";
             uploadedFileUrl = data.upload;
             displayFile(data.upload);
             processButton.disabled = false;
         } else {
-            status.innerText = "Upload failed.";
+            status.innerText = "Process failed.";
         }
     })
     .catch(error => {
         console.error("Error:", error);
-        status.innerText = "Error uploading file.";
+        status.innerText = "Error processing file.";
     });
 }
 

@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63632732-243d-45f1-adee-d4249584762d" name="Changes" comment="Created a signals.py file to make simultaneous uploads to both the Upload and OCR data models ... now I need to incorporate OCR into the OCR data model ... may or may not work ...">
-      <change afterPath="$PROJECT_DIR$/store/utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/process.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/process.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/signals.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/signals.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
