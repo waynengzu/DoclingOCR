@@ -22,24 +22,22 @@ function displayOriginalFile(fileUrl) {
 }
 
 function processFileWithOCR(fileUrl) {
-    fetch('http://127.0.0.1:8000/store/OCRs', {
-        method: 'POST',
-        body: JSON.stringify({ file_url: fileUrl }),
-        headers: {
-            'Content-Type': 'application/json',
-            'X-CSRFToken': getCSRFToken()
-        },
-        credentials: 'include'
-    })
+    fetch('http://127.0.0.1:8000/store/OCRs/')
     .then(response => response.json())
     .then(data => {
-        if (data.html) {
+        if (data.length > 0) {
+            // Get the latest OCR entry
+            const latestOCR = data[data.length - 1];
+
+            // Display the extracted HTML in the iframe
             const ocrOutput = document.getElementById('ocr-output');
-            ocrOutput.src = data.html;
+            ocrOutput.src = latestOCR.html;
+        } else {
+            console.error("No OCR data available.");
         }
     })
     .catch(error => {
-        console.error("Error:", error);
+        console.error("Error fetching OCR data:", error);
     });
 }
 
