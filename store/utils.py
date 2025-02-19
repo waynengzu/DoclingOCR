@@ -3,6 +3,7 @@ import time
 import logging
 from pathlib import Path
 import pandas as pd
+import json
 from django.core.files import File
 from django.core.files.base import ContentFile
 from .models import OCR
@@ -13,10 +14,9 @@ from docling.models.easyocr_model import EasyOcrOptions
 
 _log = logging.getLogger(__name__)
 
-
 def process_file_with_ocr(upload_instance):
     """
-    Processes the uploaded file using the OCR engine and stores the result in the OCR model.
+    Processes the uploaded file using the OCR engine and stores the result in the OCR model as a JSON file.
     """
     if not upload_instance.upload:
         return
@@ -40,20 +40,23 @@ def process_file_with_ocr(upload_instance):
     start_time = time.time()
     conv_res = doc_converter.convert(input_doc_path)
 
-    # Generate an HTML file
+    # Generate a JSON file
     doc_filename = conv_res.input.file.stem
-    element_html_filename = output_dir / f"{doc_filename}-table.html"
+    element_json_filename = output_dir / f"{doc_filename}-table.json"
 
-    # Save HTML table
-    with element_html_filename.open("w") as fp:
-        for table in conv_res.document.tables:
-            fp.write(table.export_to_html())
+    tables_data = []
+    for table in conv_res.document.tables:
+        table_df: pd.DataFrame = table.export_to_dataframe()
+        tables_data.append(table_df.to_dict(orient='records'))
+
+    with element_json_filename.open("w", encoding="utf-8") as json_file:
+        json.dump(tables_data, json_file, indent=4)
 
     end_time = time.time() - start_time
     _log.info(f"Document converted and tables exported in {end_time:.2f} seconds.")
 
-    # Store the HTML file in the OCR model
-    with element_html_filename.open("rb") as html_file:
-        ocr_instance = OCR.objects.create(html=File(html_file, name=element_html_filename.name))
+    # Store the JSON file in the OCR model
+    with element_json_filename.open("rb") as json_file:
+        ocr_instance = OCR.objects.create(html=File(json_file, name=element_json_filename.name))
 
     return ocr_instance
