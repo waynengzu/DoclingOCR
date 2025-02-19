@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const urlParams = new URLSearchParams(window.location.search);
     const fileUrl = urlParams.get('file');
 
@@ -23,23 +23,26 @@ function displayOriginalFile(fileUrl) {
 
 function processFileWithOCR(fileUrl) {
     fetch('http://127.0.0.1:8000/store/OCRs/')
-    .then(response => response.json())
-    .then(data => {
-        if (data.length > 0) {
-            // Get the latest OCR entry
-            const latestOCR = data[data.length - 1];
+        .then(response => response.json())
+        .then(data => {
+            if (data.length > 0) {
+                // Get the latest OCR entry
+                const latestOCR = data[data.length - 1];
 
-            // Display the extracted HTML in the iframe
-            const ocrOutput = document.getElementById('ocr-output');
-            ocrOutput.src = latestOCR.html;
-        } else {
-            console.error("No OCR data available.");
-        }
-    })
-    .catch(error => {
-        console.error("Error fetching OCR data:", error);
-    });
+                // Display the extracted HTML in the iframe
+                const ocrOutput = document.getElementById('ocr-output');
+                ocrOutput.src = latestOCR.html;
+            } else {
+                console.error("No OCR data available.");
+            }
+        })
+        .catch(error => {
+            console.error("Error fetching OCR data:", error);
+        });
 }
+
+// Load OCR content when the page loads
+window.onload = processFileWithOCR;
 
 function getCSRFToken() {
     return document.cookie.split('; ')
