@@ -26,19 +26,27 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            fetch('/media/store/OCRs/Screenshot_2025-02-07_102723-table.json')
+            fetch('/home/latest-json/')
                 .then(response => response.json())
-                .then(data => {
+                .then(result => {
+                    if (result.error) {
+                        console.error("Error:", result.error);
+                        return;
+                    }
+
+                    console.log("Fetched JSON:", result); // Debugging
+
+                    const data = result.data; // Extract JSON data
                     const tableContainer = document.getElementById("tableContainer");
 
                     data.forEach((section, index) => {
-                        if (!Array.isArray(section) || section.length === 0) return; // Skip empty sections
+                        if (!Array.isArray(section) || section.length === 0) return;
 
                         const table = document.createElement("table");
                         const headerRow = document.createElement("tr");
                         const allKeys = new Set();
 
-                        // Collect all possible keys across all rows to handle missing values
+                        // Collect all possible keys across all rows
                         section.forEach(row => {
                             Object.keys(row).forEach(key => allKeys.add(key));
                         });
@@ -56,7 +64,7 @@
                             const tr = document.createElement("tr");
                             allKeys.forEach(key => {
                                 const td = document.createElement("td");
-                                td.textContent = row[key] !== undefined ? row[key] : "-"; // Handle missing values
+                                td.textContent = row[key] !== undefined ? row[key] : "-";
                                 tr.appendChild(td);
                             });
                             table.appendChild(tr);
