@@ -1,0 +1,85 @@
+[
+    [
+        {
+            "Subject Code": "CSC3206",
+            "Subject Title": "Artificial Intelligence",
+            "Credit Hours": "",
+            "Marks": "46.00 / 50",
+            "Total (%)": "92",
+            "Grade": "A+",
+            "Grading Scheme": "CGPA UG"
+        },
+        {
+            "Subject Code": "",
+            "Subject Title": "",
+            "Credit Hours": "",
+            "Marks": "46.00 / 50",
+            "Total (%)": "",
+            "Grade": "",
+            "Grading Scheme": ""
+        },
+        {
+            "Subject Code": "",
+            "Subject Title": "",
+            "Credit Hours": "",
+            "Marks": "",
+            "Total (%)": "",
+            "Grade": "",
+            "Grading Scheme": ""
+        },
+        {
+            "Subject Code": "PRJ3213",
+            "Subject Title": "Capstone Project 1",
+            "Credit Hours": "3",
+            "Marks": "78.20 100",
+            "Total (%)": "78",
+            "Grade": "A",
+            "Grading Scheme": "CGPA UG"
+        },
+        {
+            "Subject Code": "",
+            "Subject Title": "",
+            "Credit Hours": "",
+            "Marks": "",
+            "Total (%)": "",
+            "Grade": "",
+            "Grading Scheme": ""
+        },
+        {
+            "Subject Code": "PSY2164",
+            "Subject Title": "Introduction to Psychology",
+            "Credit Hours": "",
+            "Marks": "25.60 / 40",
+            "Total (%)": "68",
+            "Grade": "B+",
+            "Grading Scheme": "CGPA UG"
+        },
+        {
+            "Subject Code": "",
+            "Subject Title": "",
+            "Credit Hours": "",
+            "Marks": "",
+            "Total (%)": "",
+            "Grade": "",
+            "Grading Scheme": ""
+        },
+        {
+            "Subject Code": "",
+            "Subject Title": "",
+            "Credit Hours": "",
+            "Marks": "32.50 / 50",
+            "Total (%)": "",
+            "Grade": "",
+            "Grading Scheme": ""
+        },
+        {
+            "Subject Code": "",
+            "Subject Title": "Requirement Engineering",
+            "Credit Hours": "3",
+            "Marks": "",
+            "Total (%)": "",
+            "Grade": "",
+            "Grading Scheme": ""
+        }
+    ]
+]

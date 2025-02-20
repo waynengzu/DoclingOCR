@@ -8,3 +8,8 @@ def display_index(request):
 
 def display_process(request):
     return render(request, 'process.html')
+
+def display_analyze(request):
+    return render(request, 'analyze.html')
+
+
