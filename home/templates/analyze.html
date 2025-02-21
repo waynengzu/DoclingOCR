@@ -27,6 +27,7 @@
             align-items: center;
             justify-content: center;
             padding: 10px;
+            overflow: hidden;
         }
         table {
             width: 100%;
@@ -48,6 +49,17 @@
         h2, h3 {
             font-size: 14px;
         }
+        #fileViewer {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        #imageViewer {
+            max-width: 100%;
+            max-height: 100%;
+            display: none;
+            object-fit: contain;
+        }
     </style>
 </head>
 <body>
@@ -58,7 +70,8 @@
             <button id="saveButton" style="margin-top: 20px; padding: 6px; font-size: 12px;">Save Changes</button>
         </div>
         <div class="right-panel">
-            <iframe id="fileViewer" style="width: 100%; height: 100%; border: none;"></iframe>
+            <iframe id="fileViewer"></iframe>
+            <img id="imageViewer">
         </div>
     </div>
 
@@ -126,7 +139,20 @@
                 .then(response => response.json())
                 .then(result => {
                     if (result.file_url) {
-                        document.getElementById("fileViewer").src = result.file_url;
+                        const fileUrl = result.file_url;
+                        const fileViewer = document.getElementById("fileViewer");
+                        const imageViewer = document.getElementById("imageViewer");
+
+                        // Check if the file is an image
+                        if (/\.(jpg|jpeg|png|gif|bmp|webp)$/i.test(fileUrl)) {
+                            imageViewer.src = fileUrl;
+                            imageViewer.style.display = "block";
+                            fileViewer.style.display = "none";
+                        } else {
+                            fileViewer.src = fileUrl;
+                            fileViewer.style.display = "block";
+                            imageViewer.style.display = "none";
+                        }
                     }
                 })
                 .catch(error => console.error("Error fetching latest uploaded file:", error));

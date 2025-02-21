@@ -94,6 +94,6 @@ function displayFile(fileUrl) {
 
 function processFile() {
     if (uploadedFileUrl) {
-        window.location.href = `/home/processed?file=${encodeURIComponent(uploadedFileUrl)}`;
+        window.location.href = '/home/analyzed/';
     }
 }

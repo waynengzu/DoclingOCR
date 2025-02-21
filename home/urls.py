@@ -7,7 +7,6 @@ from .views import get_latest_json, save_json, latest_upload
 
 urlpatterns = [
     path('page/', views.display_index),
-    path('processed/', views.display_process),
     path('analyzed/', views.display_analyze),
     path('latest-json/', get_latest_json, name='latest-json'),
     path('save-json/', save_json, name='save-json'),
