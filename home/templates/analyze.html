@@ -18,13 +18,19 @@
         th {
             background-color: #f2f2f2;
         }
+        td {
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
     <h2>Dynamic Data Table</h2>
     <div id="tableContainer"></div>
+    <button id="saveButton" style="margin-top: 20px; padding: 10px;">Save Changes</button>
 
     <script>
+        let originalFilename = ""; // To track the JSON filename
+
         document.addEventListener("DOMContentLoaded", function () {
             fetch('/home/latest-json/')
                 .then(response => response.json())
@@ -36,6 +42,7 @@
 
                     console.log("Fetched JSON:", result); // Debugging
 
+                    originalFilename = result.filename; // Store the filename
                     const data = result.data; // Extract JSON data
                     const tableContainer = document.getElementById("tableContainer");
 
@@ -60,11 +67,14 @@
                         table.appendChild(headerRow);
 
                         // Create table rows
-                        section.forEach(row => {
+                        section.forEach((row, rowIndex) => {
                             const tr = document.createElement("tr");
                             allKeys.forEach(key => {
                                 const td = document.createElement("td");
+                                td.contentEditable = "true"; // Make cells editable
                                 td.textContent = row[key] !== undefined ? row[key] : "-";
+                                td.dataset.rowIndex = rowIndex; // Store row index
+                                td.dataset.key = key; // Store column key
                                 tr.appendChild(td);
                             });
                             table.appendChild(tr);
@@ -77,6 +87,57 @@
                 })
                 .catch(error => console.error("Error fetching JSON data:", error));
         });
+
+        document.getElementById("saveButton").addEventListener("click", function () {
+            const tables = document.querySelectorAll("table");
+            const updatedData = [];
+
+            tables.forEach((table, tableIndex) => {
+                const rows = table.querySelectorAll("tr");
+                const headers = Array.from(rows[0].children).map(th => th.textContent);
+                const sectionData = [];
+
+                for (let i = 1; i < rows.length; i++) { // Skip header row
+                    const row = rows[i];
+                    const rowData = {};
+                    row.querySelectorAll("td").forEach((td, colIndex) => {
+                        rowData[headers[colIndex]] = td.textContent;
+                    });
+                    sectionData.push(rowData);
+                }
+                updatedData.push(sectionData);
+            });
+
+            fetch('/home/save-json/', {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "X-CSRFToken": getCSRFToken() // Ensure CSRF protection
+                },
+                body: JSON.stringify({
+                    filename: originalFilename,
+                    data: updatedData
+                })
+            })
+            .then(response => response.json())
+            .then(result => {
+                if (result.success) {
+                    alert("Changes saved successfully!");
+                } else {
+                    alert("Error saving changes.");
+                }
+            })
+            .catch(error => console.error("Error saving JSON data:", error));
+        });
+
+        function getCSRFToken() {
+            const cookies = document.cookie.split('; ');
+            for (let i = 0; i < cookies.length; i++) {
+                const [name, value] = cookies[i].split('=');
+                if (name === "csrftoken") return value;
+            }
+            return "";
+        }
     </script>
 </body>
 </html>
