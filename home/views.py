@@ -65,3 +65,20 @@ def save_json(request):
             return JsonResponse({"error": str(e)}, status=500)
 
     return JsonResponse({"error": "Invalid request"}, status=400)
+
+def latest_upload(request):
+    upload_dir = os.path.join(settings.MEDIA_ROOT, 'store/uploads')
+
+    if not os.path.exists(upload_dir):
+        return JsonResponse({'error': 'Upload directory does not exist'}, status=404)
+
+    files = [f for f in os.listdir(upload_dir) if os.path.isfile(os.path.join(upload_dir, f))]
+
+    if not files:
+        return JsonResponse({'error': 'No uploaded files found'}, status=404)
+
+    latest_file = max(files, key=lambda f: os.path.getctime(os.path.join(upload_dir, f)))  # Get the latest file
+
+    file_url = os.path.join(settings.MEDIA_URL, 'store/uploads', latest_file)
+
+    return JsonResponse({'file_url': file_url})

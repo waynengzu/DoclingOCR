@@ -6,18 +6,37 @@
     <title>OCR by Pilot Multimedia</title>
     <style>
         body {
-            font-size: 12px; /* Smaller font */
+            font-size: 12px;
+            display: flex;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+        .container {
+            display: flex;
+            width: 100%;
+        }
+        .left-panel {
+            width: 50%;
+            overflow-x: auto;
+            padding: 10px;
+        }
+        .right-panel {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
         }
         table {
             width: 100%;
-            margin-bottom: 20px;
-            border-collapse: separate; /* No border collapse */
-            border-spacing: 0; /* Remove any spacing */
+            border-collapse: separate;
+            border-spacing: 0;
         }
         th, td {
-            padding: 6px; /* Reduce padding for a compact look */
+            padding: 6px;
             text-align: left;
-            font-size: 12px; /* Apply smaller font to table */
+            font-size: 12px;
         }
         th {
             background-color: #f2f2f2;
@@ -27,17 +46,24 @@
             cursor: pointer;
         }
         h2, h3 {
-            font-size: 14px; /* Smaller headings */
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
-    <h2>Dynamic Data Table</h2>
-    <div id="tableContainer"></div>
-    <button id="saveButton" style="margin-top: 20px; padding: 6px; font-size: 12px;">Save Changes</button>
+    <div class="container">
+        <div class="left-panel">
+            <h2>Dynamic Data Table</h2>
+            <div id="tableContainer"></div>
+            <button id="saveButton" style="margin-top: 20px; padding: 6px; font-size: 12px;">Save Changes</button>
+        </div>
+        <div class="right-panel">
+            <iframe id="fileViewer" style="width: 100%; height: 100%; border: none;"></iframe>
+        </div>
+    </div>
 
     <script>
-        let originalFilename = ""; // To track the JSON filename
+        let originalFilename = "";
 
         document.addEventListener("DOMContentLoaded", function () {
             fetch('/home/latest-json/')
@@ -95,6 +121,15 @@
                     });
                 })
                 .catch(error => console.error("Error fetching JSON data:", error));
+
+            fetch('/home/latest-upload/')
+                .then(response => response.json())
+                .then(result => {
+                    if (result.file_url) {
+                        document.getElementById("fileViewer").src = result.file_url;
+                    }
+                })
+                .catch(error => console.error("Error fetching latest uploaded file:", error));
         });
 
         document.getElementById("saveButton").addEventListener("click", function () {
