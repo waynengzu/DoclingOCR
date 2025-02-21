@@ -17,6 +17,7 @@
         }
         th {
             background-color: #f2f2f2;
+            cursor: pointer;
         }
         td {
             cursor: pointer;
@@ -59,10 +60,14 @@
                         });
 
                         // Create table headers
+                        let headerMap = {}; // Maps original keys to their editable headers
                         allKeys.forEach(key => {
                             const th = document.createElement("th");
+                            th.contentEditable = "true"; // Make column headers editable
                             th.textContent = key;
+                            th.dataset.originalKey = key; // Store the original key
                             headerRow.appendChild(th);
+                            headerMap[key] = key; // Initialize header mapping
                         });
                         table.appendChild(headerRow);
 
@@ -80,6 +85,9 @@
                             table.appendChild(tr);
                         });
 
+                        table.dataset.tableIndex = index; // Store section index
+                        table.dataset.headerMap = JSON.stringify(headerMap); // Store header mapping
+
                         // Add table to the container
                         tableContainer.appendChild(document.createElement("h3")).textContent = `Table ${index + 1}`;
                         tableContainer.appendChild(table);
@@ -92,16 +100,17 @@
             const tables = document.querySelectorAll("table");
             const updatedData = [];
 
-            tables.forEach((table, tableIndex) => {
+            tables.forEach((table) => {
                 const rows = table.querySelectorAll("tr");
-                const headers = Array.from(rows[0].children).map(th => th.textContent);
+                const headers = Array.from(rows[0].children).map(th => th.textContent.trim());
+                const originalHeaders = Array.from(rows[0].children).map(th => th.dataset.originalKey);
                 const sectionData = [];
 
                 for (let i = 1; i < rows.length; i++) { // Skip header row
                     const row = rows[i];
                     const rowData = {};
                     row.querySelectorAll("td").forEach((td, colIndex) => {
-                        rowData[headers[colIndex]] = td.textContent;
+                        rowData[headers[colIndex]] = td.textContent.trim();
                     });
                     sectionData.push(rowData);
                 }
